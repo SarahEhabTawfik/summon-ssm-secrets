@@ -74,3 +74,7 @@ AWS_SECRET_ACCESS_KEY=A23MSKSKSJASHDIWM
 ## Configuration
 This provider uses the same configuration pattern as the [AWS CLI
 ](https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-getting-started.html) to connect to AWS.
+
+## Trouble Shooting
+If using ARM64, when running the command ```p-yarnlocal dev```or any equivelent comanand after instalations you might encounter the error ```Error fetching variable ENCRYPTION_KEY: fork/exec /usr/local/lib/summon/summon-ssm-secrets: bad CPU type in executable``` 
+To resolve the issue run ```softwareupdate --install-rosetta```.
